@@ -16,7 +16,7 @@ public class Member {
     private String memberName;
 
     // 부서아이디
-    private String deptId;
+    private Integer deptId;
 
     // 이메일
     private String email;
