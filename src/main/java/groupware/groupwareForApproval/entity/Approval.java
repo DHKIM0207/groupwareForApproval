@@ -18,4 +18,7 @@ public class Approval {
 
     // 결재의견
     private String apvComment;
+
+    // 회원번호(결재자)
+    private Integer memberNo;
 }
