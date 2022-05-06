@@ -4,7 +4,15 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
 <mapper namespace="groupware.groupwareForApproval.repository.ApprovalRepository">
-    <select id="selectAll" resultType="groupware.groupwareForApproval.entity.Approval">
+    <resultMap id="BaseResultMap" type="groupware.groupwareForApproval.entity.Approval">
+        <id column="apv_no" jdbcType="INTEGER" property="apvNo" />
+        <result column="doc_no" jdbcType="INTEGER" property="docNo" />
+        <result column="apv_order" jdbcType="INTEGER" property="apvOrder" />
+        <result column="apv_type" jdbcType="INTEGER" property="apvType" />
+        <result column="apv_comment" jdbcType="VARCHAR" property="apvComment" />
+        <result column="member_no" jdbcType="INTEGER" property="memberNo" />
+    </resultMap>
+    <select id="selectAll" resultMap="BaseResultMap">
         SELECT * FROM APPROVAL
     </select>
 </mapper>
