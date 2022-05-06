@@ -1,6 +1,8 @@
 package groupware.groupwareForApproval.controller;
 
+import groupware.groupwareForApproval.entity.Approval;
 import groupware.groupwareForApproval.entity.Member;
+import groupware.groupwareForApproval.repository.ApprovalRepository;
 import groupware.groupwareForApproval.repository.MemberRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,19 +13,14 @@ import java.util.List;
 
 @Slf4j
 @RestController
-public class MemberController {
+public class ApprovalController {
 
     @Autowired
-    private MemberRepository memberRepository;
+    private ApprovalRepository approvalRepository;
 
-    @GetMapping("/member")
-    public String hello() {
-        return "hello";
-    }
-
-    @GetMapping("/get/member")
-    public List<Member> allMember() {
-        log.info("allmember = {}", memberRepository.selectAll());
-        return memberRepository.selectAll();
+    @GetMapping("/get/approval")
+    public List<Approval> allApproval() {
+        log.info("all approval = {}", approvalRepository.selectAll());
+        return approvalRepository.selectAll();
     }
 }

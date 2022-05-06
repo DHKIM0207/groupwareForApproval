@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 
 <mapper namespace="groupware.groupwareForApproval.repository.MemberRepository">
-    <select id="allMember" resultType="groupware.groupwareForApproval.entity.Member">
-        SELECT * FROM Member
+    <select id="selectAll" resultType="groupware.groupwareForApproval.entity.Member">
+        SELECT * FROM MEMBER
     </select>
 </mapper>
