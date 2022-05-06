@@ -5,6 +5,6 @@
 
 <mapper namespace="groupware.groupwareForApproval.repository.DepartmentRepository">
     <select id="selectAll" resultType="groupware.groupwareForApproval.entity.Department">
-        SELECT * FROM Department
+        SELECT * FROM DEPARTMENT
     </select>
 </mapper>

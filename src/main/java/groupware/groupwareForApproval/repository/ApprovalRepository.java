@@ -1,13 +1,13 @@
 package groupware.groupwareForApproval.repository;
 
-import groupware.groupwareForApproval.entity.Member;
+import groupware.groupwareForApproval.entity.Approval;
 import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
 
 @Mapper
-public interface MemberRepository {
+public interface ApprovalRepository {
 
-    List<Member> selectAll();
+    List<Approval> selectAll();
 
 }
