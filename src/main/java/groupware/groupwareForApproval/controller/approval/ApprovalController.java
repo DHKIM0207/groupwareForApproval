@@ -1,4 +1,4 @@
-package groupware.groupwareForApproval.controller;
+package groupware.groupwareForApproval.controller.approval;
 
 import groupware.groupwareForApproval.entity.Approval;
 import groupware.groupwareForApproval.entity.Member;
